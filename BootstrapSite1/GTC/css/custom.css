@@ -1,0 +1,40 @@
+﻿.navbar-inverse .navbar-brand{
+    color: white;
+}
+
+.navbar-left img{
+    height:35px;
+    margin-right: 20px;
+} 
+
+.container .jumbotron{
+    border-radius: 0;
+}
+
+.jumbotron {
+    background-color: lightslategrey;
+    color: whitesmoke;
+    border-radius: 0;
+}
+
+.jumbotron h1{
+    color: white;
+}
+
+.carousel{
+    height:100%;
+}
+
+.carousel-inner .item .img{
+    height: 800px;
+    -ms-align-content: flex-start;
+    -webkit-align-content: flex-start; a; a; a; a; a; a; a; a; a;
+    align-content: flex-start;
+    width:100%;
+}
+
+.red{
+    background-color: #d50000;
+}
+
+
