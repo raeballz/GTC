@@ -46,25 +46,13 @@
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
                         <a href="productShowroom.html">Product Showroom</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div><!--/.nav-collapse -->
@@ -81,26 +69,26 @@
             </ol>
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" >
+            <div class="carousel-inner">
                 <div class="item active">
                     <img class="img" src="imgs/greyandblack.jpg" alt="Los Angeles">
                     <div class="carousel-caption">
                         <img src="imgs/85Percent.png">
-                        <h1 class="lead" >Glasgow Tile Center</h1>
+                        <h1 class="lead">Glasgow Tile Center</h1>
                     </div>
                 </div>
 
                 <div class="item">
                     <img class="img" src="imgs/kitchentiles.jpg" alt="Chicago">
-                    <div class="carousel-caption" >
-                        <img src="imgs/85Percent.png" >
+                    <div class="carousel-caption">
+                        <img src="imgs/85Percent.png">
                         <h1 class="lead">Glasgow Tile Center</h1>
                     </div>
                 </div>
 
                 <div class="item">
                     <img class="img" src="/imgs/tap.jpg" alt="New York">
-                    <div class="carousel-caption" >
+                    <div class="carousel-caption">
                         <img src="imgs/85Percent.png">
                         <h1 class="lead">Glasgow Tile Center</h1>
                     </div>
@@ -123,20 +111,23 @@
         <div class="container col-md-12 col-lg-12">
             <!-- Main component for a primary marketing message or call to action -->
             <div class="jumbotron red marginTopAndBottomless" id="servicesJumbo">
-                <div class="row" style="height:350px;">
-                    <div class="col-lg-4">
-                        <div class="container">
-                            <p class="glyphicon superGlyph glyphicon-heart" style="font-size:120px;" >
-                            </p>
+                <div class="row">
+                    <div class="container-fluid">
+                        <div class="col-lg-3">
+                            <div class="container" id="homeIcon">
+                                <p class="glyphicon superGlyph glyphicon-heart" style="font-size:180px;">
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <h1>Welcome to Glasgow Tile Center</h1>
-                        <p>We have over 50 years of experience to share with you!</p>
-                        <p>Check out our fantastic products avaliable in store.</p>
-                        <p>
-                            <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Take me to the product showroom &raquo;</a>
-                        </p>
+                        <div class="col-lg-9">
+                            <div class="container">
+                                <h1>Welcome to Glasgow Tile Center</h1>
+                                <p> Established 2012 we are a supplier of fine quality wall, floor and contract tiles from the latest ceramic, porcelain and mosaic ranges from the UK, Spain and Italy</p>
+                                <p>Our highly experienced staff bring over 60 years collective experience in the tile industry.</p>
+                                <p>Our showroom and distribution centre is based in East Kilbride and offer quality products along with excellent service at an affordable price.</p>
+                                <p>We provide tiles to suit various projects from the smallest of bathrooms to housebuilding and commercial projects.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -152,58 +143,39 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <h2 id="serviceSubheader">About</h2>
-                        <p class="glyphicon superGlyph glyphicon-heart" style="font-size:120px;" >
+                        <p class="glyphicon superGlyph glyphicon-question-sign" style="font-size:120px;">
                         </p>
                     </div>
                     <div class="col-lg-3">
-                        <h2 id="serviceSubheader">Stuff here</h2>
-                        <p class="glyphicon superGlyph glyphicon-heart" style="font-size:120px;">
+                        <h2 id="serviceSubheader">Product Showroom</h2>
+                        <p class="glyphicon superGlyph glyphicon-barcode" style="font-size:120px;">
                         </p>
                     </div>
                     <div class="col-lg-3">
-                        <h2 id="serviceSubheader">Services</h2>
-                        <p class="glyphicon superGlyph glyphicon-heart" style="font-size:120px;">
+                        <h2 id="serviceSubheader">Completed Work</h2>
+                        <p class="glyphicon superGlyph glyphicon-wrench" style="font-size:120px;">
                         </p>
                     </div>
                     <div class="col-lg-3">
-                        <h2 id="serviceSubheader">Products</h2>
-                        <p class="glyphicon superGlyph glyphicon-heart" style="font-size:120px;">
+                        <h2 id="serviceSubheader">Contact Us</h2>
+                        <p class="glyphicon superGlyph glyphicon glyphicon-send" style="font-size:120px;">
                         </p>
                     </div>
                 </div>
             </div>
         </div> <!-- /container -->
     </div>
-    <div class="row">
-        <div class="container col-md-6 col-lg-6">
-            <!-- Main component for a primary marketing message or call to action -->
-            <div class="jumbotron red">
-                <h1>Navbar example</h1>
-                <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-                <p>To see the difference between static and fixed top navbars, just scroll.</p>
-            </div>
-        </div> <!-- /container -->
-        <div class="container col-md-6 col-lg-6">
-            <!-- Main component for a primary marketing message or call to action -->
-            <div class="jumbotron red">
-                <h1>Navbar example</h1>
-                <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-                <p>To see the difference between static and fixed top navbars, just scroll.</p>
-
-            </div>
-        </div> <!-- /container -->
-    </div>
-    <footer class="footer dark">
+    <footer class="footer red">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <h1 img=""> Glasgow Tile Center</h1>
-                    <img id="footerLogo" src="imgs/85Percent.png"/>
+                    <img id="footerLogo" src="imgs/85Percent.png" />
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <h1> Links </h1>
                     <p>
-                        Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
                     </p>
                     <p>
                         Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
