@@ -39,6 +39,20 @@
 
 /* Gallery CSS */
 
+    .gallerySectionHeader
+    {
+        text-align:center;
+    }
+
+    .galleryContainer
+    {
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:center;
+        margin:0;
+    }
+
     .hide-bullets 
     {
         list-style:none;
@@ -48,14 +62,11 @@
 
     .thumbnail 
     {
-        padding: 5px;
         width: 450px;
         height:300px;
         position: relative;
-        overflow:hidden;
-        float: left;
-        margin: 10px;
-        margin-top:20px;
+        margin: 20px;
+        overflow: hidden;
         background-color: transparent;
         border-color: transparent;
     }
@@ -64,8 +75,8 @@
       position: absolute;
       left: 50%;
       top: 75%;
-      height: 100%;
-      width: auto;
+      height: auto;
+      width: 100%;
       -webkit-transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
@@ -74,6 +85,7 @@
     a.thumbnail
     {
         color: red;
+        text-align:center;
     }
 
     .thumbnail:hover
@@ -87,8 +99,8 @@
 
     a.thumbnail>img
     {
-        min-height:100%;
-        width:auto;
+        width:100%;
+        height:100%;
     }
 
     a.thumbnail:hover, a.thumbnail:focus 
@@ -540,6 +552,7 @@
 .tabs-left>li, .tabs-right>li {
   float: none;
   margin-bottom: 2px;
+  font-size: 20px;
 }
 .tabs-left>li {
   margin-right: -1px;
@@ -550,8 +563,11 @@
 .tabs-left>li.active>a,
 .tabs-left>li.active>a:hover,
 .tabs-left>li.active>a:focus {
-  border-bottom-color: #ddd;
-  border-right-color: transparent;
+    background-color:#d50000;
+    color:white;
+    border-bottom-color: #ddd;
+    border-right-color: transparent;
+    transition: background-color ease 0.3s;
 }
 
 .tabs-right>li.active>a,
@@ -560,11 +576,23 @@
   border-bottom: 1px solid #ddd;
   border-left-color: transparent;
 }
+
 .tabs-left>li>a {
+    color:white;
   border-radius: 4px 0 0 4px;
   margin-right: 0;
   display:block;
 }
+
+.tabs-left>li>a:hover {
+    background-color:white;
+    color:red;
+    border-radius: 4px 0 0 4px;
+    margin-right: 0;
+    display:block;
+    transition: color ease 0.3s;
+}
+
 .tabs-right>li>a {
   border-radius: 0 4px 4px 0;
   margin-right: 0;
