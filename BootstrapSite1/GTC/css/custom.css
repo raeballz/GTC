@@ -5,10 +5,14 @@
         margin:0;
         box-shadow:0px 5px 5px rgba(0,0,0,0.5);
     }
-
+    .navbar-inverse{
+        background-color: rgba(30, 30, 36, 1);
+    }
+    
     .navbar-inverse .navbar-brand
     {
         color: white;
+        background-color: rgba(30, 30, 36, 1);
     }
 
     .navbar-left img
@@ -84,7 +88,7 @@
 
     a.thumbnail
     {
-        color: red;
+        color: rgba(175, 26, 36, 1);
         text-align:center;
     }
 
@@ -125,7 +129,7 @@
     ul>li.col-sm-3 a:hover 
     {
         box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
-        border: 1px solid #d50000;
+        border: 1px solid rgba(175, 26, 36, 1);;
     }
 
     div#carousel-bounding-box 
@@ -153,16 +157,16 @@
 
     .carousel-inner
     {
-        min-height:300px;
-        max-height:900px;
+        min-height:400px;
+        max-height:700px;
         align-content: flex-start;
         width:100%;
     }
 
     .item > img
     {
-        min-height:500px;
-        max-height:900px;
+        min-height:400px;
+        max-height:700px;
         width:100%;
         vertical-align:central;
     }
@@ -212,7 +216,6 @@
         z-index:1000;
         position:relative;
         width:100%;
-        height:250px;
         box-shadow:0px -5px 5px rgba(0,0,0,0.5);
     }
 
@@ -220,6 +223,30 @@
         height:150px;
         padding-left:25%;
     }
+
+    .footerList li
+    {
+        list-style : none;
+        display: inline;
+        padding:20px;
+    }
+
+    .footerList li>a
+    {
+        text-align:center;
+        color:white;
+        display:block;
+        margin:auto;
+    }
+
+        .footerList li>p
+    {
+        text-align:center;
+        color:white;
+        display:block;
+        margin:auto;
+    }
+
 
 /* End footer CSS*/
 
@@ -244,17 +271,38 @@
 
 /* End bootstrap override */
 
+/* Button Modifications */
+    
+    .btn
+    {
+        color: red
+    }
+/* End Button Modifications*/
+
 /* Generic Classes */
     .red
     {
-        background-color: #d50000;
+        background-color: rgba(175, 26, 36, 1);;
         color:rgba(255,255,255,0.9);
         box-shadow: 0 10px 10px rgba(0,0,0,0.5);
     }
 
+    .offWhite{
+        background-color: rgba(255, 226, 209, 1);
+    }
+
+    .sand{
+        background-color: rgba(176, 158, 153, 1);
+    }
+
     .dark
     {
-        background-color: #222;
+        background-color:rgba(53, 58, 71, 1);
+        color:rgba(255,255,255,0.9);
+    }
+
+    .darkest{
+        background-color:rgba(30, 30, 36, 1);
         color:rgba(255,255,255,0.9);
     }
 
@@ -457,7 +505,7 @@
     padding-top: 0;
     overflow: hidden;
     text-align: center;
-    background-color: rgba(214, 224, 226, 0.2);
+    background-color: rgba(30, 30, 36, 1);;
 }
 
 .card.hovercard #chris.cardheader {
@@ -563,7 +611,7 @@
 .tabs-left>li.active>a,
 .tabs-left>li.active>a:hover,
 .tabs-left>li.active>a:focus {
-    background-color:#d50000;
+    background-color:rgba(175, 26, 36, 1);;
     color:white;
     border-bottom-color: #ddd;
     border-right-color: transparent;
@@ -586,7 +634,7 @@
 
 .tabs-left>li>a:hover {
     background-color:white;
-    color:red;
+    color:rgba(175, 26, 36, 1);;
     border-radius: 4px 0 0 4px;
     margin-right: 0;
     display:block;
