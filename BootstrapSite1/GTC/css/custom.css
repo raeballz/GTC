@@ -293,11 +293,6 @@
         z-index:-2;
     }
 
-    .staffJumbo{
-        min-height:500px;
-        max-height: 700px;
-    }
-
 /* End bootstrap override */
 
 /* Button Modifications */
