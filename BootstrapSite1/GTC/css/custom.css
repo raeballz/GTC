@@ -144,6 +144,30 @@
 
 /* End Gallery Css*/
 
+/* Index CSS*/
+    
+    .servicesSubtext>h1
+    {
+        text-align:center;
+    }
+
+    .servicesSubtext>p
+    {
+        text-align:center;
+    }
+
+    a.glyphicon{
+        text-decoration: none;
+        color:rgba(53, 58, 71, 1);
+    }
+    
+    a.glyphicon:hover {
+        text-decoration: none;
+        color:rgba(175, 26, 36, 1);
+        transition:ease 0.3s;
+    }
+
+/* End Index CSS */
 
 /* Carousel CSS */
 
@@ -283,7 +307,20 @@
         background-color:rgba(30, 30, 36, 1);
         color:white;
         border-color:#262626;
+        -moz-transition: ease all 1s;
+        -o-transition: ease all 1s;
+        -webkit-transition: ease all 1s;
+        transition: ease all 1s;
     }
+
+        .btn-default:hover {
+            background-color: white;
+            color: rgba(30, 30, 36, 1);
+            -moz-transition: ease all 1s;
+            -o-transition: ease all 1s;
+            -webkit-transition: ease all 1s;
+            transition: ease all 1s;
+        }
 
     .btn-danger{
         background-color: rgba(175, 26, 36, 1);
