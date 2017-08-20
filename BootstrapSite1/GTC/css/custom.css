@@ -156,6 +156,18 @@
         text-align:center;
     }
 
+
+    a.fa{
+        text-decoration: none;
+        color:rgba(53, 58, 71, 1)
+    }
+
+        a.fa:hover {
+        text-decoration: none;
+        color:rgba(175, 26, 36, 1);
+        transition:ease 0.3s;
+    }
+
     a.glyphicon{
         text-decoration: none;
         color:rgba(53, 58, 71, 1);
@@ -757,5 +769,9 @@
     right: -55px;
     
     z-index:1032;
+}
+
+#honeypot {
+  display: none; /*makes the field not visible to humans*/
 }
 /* End Lightbox*/
