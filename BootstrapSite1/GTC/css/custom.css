@@ -777,14 +777,14 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    position:relative;
 }
 
 
 /* End Lightbox*/
 
     @media only screen and (max-width : 768px) {
-        #galleryTabs > ul{
+        #affix-this{
             display:none;
         }
 
@@ -801,9 +801,10 @@ html,body
           box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
           transition:.3s;  
           -webkit-tap-highlight-color: rgba(0,0,0,0);
-          position:absolute;
+          position:fixed;
           left:80%;
           top:85%;
+          z-index:500;
         }
 
         .kc_fab_main_btn:focus {
@@ -816,14 +817,14 @@ html,body
 
 /* FAB Code*/
 
-@media only screen and (min-width:768px){
+    @media only screen and (min-width:768px){
             .kc_fab_main_btn{
             display:none;
         }
-}
+    }
 
-.affix {
-  top: 20px;
+#affix-this {
+  /* just so you can see it more obviously */
 }
 
 /*END FAB*/

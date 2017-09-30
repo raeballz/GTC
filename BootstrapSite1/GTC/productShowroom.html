@@ -10,26 +10,18 @@
     <link rel="icon" href="imgs/favicon.ico">
     <title>Glasgow Tile Center: Product Show Room</title>
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
 </head>
-<body >
+<body id="body">
     <!-- Static navbar -->
     <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container">
@@ -64,7 +56,7 @@
         </div>
     </nav>
 
-    <div class="row marginTopAndBottomless">
+    <div id="showRoomHeader" class="row marginTopAndBottomless">
         <div class="container col-md-12 col-lg-12 col-sm-12">
             <!-- Main component for a primary marketing message or call to action -->
             <div class="jumbotron red marginTopAndBottomless" id="servicesJumbo">
@@ -83,13 +75,12 @@
         </div> <!-- /container -->
     </div>
     <button class="kc_fab_main_btn">+</button>
-    <div class="container-fluid">
         <div class="row dark" style="min-height:300px;">
             <hr />
             <div class="col-lg-2 col-md-2 col-sm-2" >
                 <!-- required for floating -->
                 <!-- Nav tabs -->
-                <ul id="galleryTabs" class="nav nav-tabs tabs-left">
+                <ul id="affix-this" class="nav nav-tabs tabs-left">
                     <li class="active"><a href="#Keros" data-toggle="tab">Keros Ceramica</a></li>
                     <li><a href="#Isla" data-toggle="tab">Isla Tiles</a></li>
                     <li><a href="#Valsecchia" data-toggle="tab">Ceramica Valsecchia</a></li>
@@ -1340,9 +1331,8 @@
                     </div>
                 </div>
             </div>
-            <div class="clearfix"></div>
         </div>
-    </div>
+
 
     <footer class="footer dark container">
         <div class="row dark">
@@ -1396,9 +1386,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script>
@@ -1453,5 +1444,19 @@
             });
         });
     </script>
+    <script>
+        $(window).scroll(function () {
+            var aTop = "400";
+            if ($(this).scrollTop() >= aTop) {
+                $('#affix-this').css("position", "fixed");
+                $('#affix-this').css("top", "20px");
+            }
+            else
+            {
+                $('#affix-this').css("position", "relative");
+                $('#affix-this').css("top", "0px");
+            }
+        });
+     </script>
 </body>
 </html>
