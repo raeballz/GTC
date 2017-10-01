@@ -156,7 +156,7 @@
 
     a.fa{
         text-decoration: none;
-        color:rgba(53, 58, 71, 1)
+        color:rgba(53, 58, 71, 1);
     }
 
         a.fa:hover {
@@ -815,14 +815,13 @@ body{
           z-index:500;
         }
 
-        .kc_fab_main_btn:focus {
-          transform:scale(1.1);
-          transform:rotate(45deg);
-          -ms-transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
+        .kc_fab_main_btn:hover {
+          transform:scale(1.2);
         }
 
-
+        .FAB{
+            display:normal;
+        }
     }
 
 /* FAB Code*/
@@ -834,6 +833,26 @@ body{
             .FAB{
             display:none;
         }
+    }
+
+    .modal-content{
+       background-color: rgba(30, 30, 36, 1);
+       color:white;
+    }
+
+        .modal-body > ul > li 
+    {
+        color:red;
+    }
+
+    .modal-body > ul > li > a :active
+    {
+        color:grey;
+    }
+
+    .modal-body > ul > li > a 
+    {
+        color:white;
     }
 
 #affix-this {
