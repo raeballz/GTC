@@ -771,13 +771,21 @@
   display: none; /*makes the field not visible to humans*/
 }
 
-html,body
+html
 {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     position:relative;
+}
+
+body{
+        width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x:hidden;
 }
 
 
@@ -813,12 +821,17 @@ html,body
           -ms-transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
         }
+
+
     }
 
 /* FAB Code*/
 
     @media only screen and (min-width:768px){
             .kc_fab_main_btn{
+            display:none;
+        }
+            .FAB{
             display:none;
         }
     }
